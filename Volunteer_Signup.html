@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Signup Form</title>
+</head>
+<body>
+
+    <h2>Volunteer Signup</h2>
+    <form action="/submit_volunteer_signup" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="50" required></textarea><br><br>
+
+        <label for="availability">Availability (Days and Times):</label><br>
+        <textarea id="availability" name="availability" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="skills">Skills and Experience (Optional):</label><br>
+        <textarea id="skills" name="skills" rows="4" cols="50"></textarea><br><br>
+
+        <label for="interests">Areas of Interest:</label><br>
+        <input type="checkbox" id="community" name="interests" value="Community Outreach"> Community Outreach<br>
+        <input type="checkbox" id="events" name="interests" value="Event Planning"> Event Planning<br>
+        <input type="checkbox" id="admin" name="interests" value="Administrative Support"> Administrative Support<br>
+        <input type="checkbox" id="education" name="interests" value="Education and Training"> Education and Training<br><br>
+
+        <label for="message">Additional Comments (Optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+
+</body>
+</html>

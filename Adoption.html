@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+</head>
+<body>
+
+    <h2>Adoption Application Form</h2>
+    <form action="/submit_adoption_form" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Home Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="50" required></textarea><br><br>
+
+        <label for="pet">Pet You Wish to Adopt:</label><br>
+        <input type="text" id="pet" name="pet" required><br><br>
+
+        <label for="experience">Do you have any experience with pets? Please describe:</label><br>
+        <textarea id="experience" name="experience" rows="4" cols="50"></textarea><br><br>
+
+        <label for="household">Describe Your Household (Number of family members, other pets, etc.):</label><br>
+        <textarea id="household" name="household" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="agreement">Do you agree to a home visit as part of the adoption process?</label><br>
+        <input type="radio" id="yes" name="agreement" value="Yes" required> Yes<br>
+        <input type="radio" id="no" name="agreement" value="No" required> No<br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+
+</body>
+</html>
